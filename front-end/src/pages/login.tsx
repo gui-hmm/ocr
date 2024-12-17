@@ -12,7 +12,7 @@ import {
   Text1,
   TextInput,
   Title 
-} from './loginStyle';
+} from '../app/style/loginStyle';
 
 interface LoginResponse {
     access_token: string;
@@ -29,7 +29,7 @@ export default function Login() {
       if (response.data?.access_token) {
         localStorage.setItem('token', response.data.access_token);
         alert('Login successful');
-        router.push('/home/upload');
+        router.push('/upload');
       } else {
         alert('Login failed: No token received');
       }
@@ -61,7 +61,7 @@ export default function Login() {
       </ContainerInputs>
       <ContainerText>
           <Text>Haven&apos;t registered yet?</Text>
-          <Text1 onClick={() => router.push('/register/register')}>Click here</Text1>
+          <Text1 onClick={() => router.push('/register')}>Click here</Text1>
         </ContainerText>
       <LoginButton onClick={handleLogin}>Login</LoginButton>
     </Container>

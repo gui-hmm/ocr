@@ -12,7 +12,7 @@ export default function ProtectedRoute({ children }: { children: React.ReactNode
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (!token) {
-      router.push('/login/login');
+      router.push('/login');
       return;
     }
 
@@ -21,11 +21,11 @@ export default function ProtectedRoute({ children }: { children: React.ReactNode
 
       if (decoded.exp * 1000 < Date.now()) {
         localStorage.removeItem('token');
-        router.push('/login/login');
+        router.push('/login');
       }
     } catch (error) {
       localStorage.removeItem('token');
-      router.push('/login/login');
+      router.push('/login');
     }
   }, [router]);
 

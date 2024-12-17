@@ -1,4 +1,4 @@
-import Header from '@/app/components/header/header';
+import Header from '@/app/components/header';
 import ProtectedRoute from '@/app/components/ProtectedRoute';
 import api from '@/app/services/axiosInstance';
 import React, { useState } from 'react';
@@ -21,7 +21,7 @@ import {
   Title, 
   TitleTexts, 
   UploadButton 
-} from './uploadStyle';
+} from '../app/style/uploadStyle';
 
 type UploadResponse = {
   message: string;

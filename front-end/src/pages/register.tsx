@@ -12,7 +12,7 @@ import {
   Text1,
   TextInput,
   Title 
-} from './registerStyle';
+} from '../app/style/registerStyle';
 
 export default function Register() {
   const [email, setEmail] = useState('');
@@ -22,7 +22,7 @@ export default function Register() {
   const handleRegister = async () => {
     try {
       await api.post('/auth/register', { email, password });
-      router.push('/login/login');
+      router.push('/login');
       alert('Registration successful');
     } catch (error) {
       alert('Error registering user');
@@ -51,7 +51,7 @@ export default function Register() {
       </ContainerInputs>
       <ContainerText>
           <Text>Already registered?</Text>
-          <Text1 onClick={() => router.push('/login/login')}>Login</Text1>
+          <Text1 onClick={() => router.push('/login')}>Login</Text1>
         </ContainerText>
       <LoginButton onClick={handleRegister}>Register</LoginButton>
     </Container>

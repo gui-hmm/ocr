@@ -7,7 +7,7 @@ const IndexPage = () => {
   const router = useRouter();
 
   useEffect(() => {
-    router.push('/login/login');
+    router.push('/login');
   }, [router]);
 
   return null;

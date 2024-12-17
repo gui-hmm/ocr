@@ -45,12 +45,8 @@ src/
   app/
     components/
     services/
+    style/
   pages/
-    download/
-    home/
-    list/
-    login/
-    register/
 ```
 
 ### Backend

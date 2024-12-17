@@ -1,4 +1,4 @@
-import Header from '@/app/components/header/header';
+import Header from '@/app/components/header';
 import ProtectedRoute from '@/app/components/ProtectedRoute';
 import api from '@/app/services/axiosInstance';
 import React, { useEffect, useState } from 'react';
@@ -13,7 +13,7 @@ import {
   LoadingMessage, 
   EmptyMessage, 
   GlobalStyle
-} from './documentsStyle';
+} from '../app/style/documentsStyle';
 
 interface Document {
   id: number;

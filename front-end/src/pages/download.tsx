@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Header from '@/app/components/header/header';
+import Header from '@/app/components/header';
 import ProtectedRoute from '@/app/components/ProtectedRoute';
 import api from '@/app/services/axiosInstance';
 import { 
@@ -11,7 +11,7 @@ import {
   LoadingMessage, 
   PageContainer, 
   Title 
-} from './downloadStyle';
+} from '../app/style/downloadStyle';
 
 interface Document {
   id: number;
