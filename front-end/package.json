@@ -1,0 +1,30 @@
+{
+  "name": "front-end",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/axios": "^0.9.36",
+    "@types/styled-components": "^5.1.34",
+    "axios": "^1.7.9",
+    "jwt-decode": "^4.0.0",
+    "next": "15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "styled-components": "^6.1.13"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.0",
+    "typescript": "^5"
+  }
+}
